@@ -12,6 +12,8 @@ const AdminTrainer = () => {
   const [errorMessage, setErrorMessage] = useState('');
   const MAX_LOGIN_ATTEMPTS = 10;
   const BLOCK_DURATION_MINUTES = 10;
+  const reglink = 'demouser/b210689d-c805-406b-83a7-79f79439d442';
+  
   const { login } = useAuth();
   const navigate = useNavigate();
 
@@ -101,6 +103,11 @@ const AdminTrainer = () => {
           <p>Attempts left: {MAX_LOGIN_ATTEMPTS - loginAttempts}</p>
         )}
       </form>
+      <div style={{ marginTop: '60px' }}>
+        <a href={reglink} style={{ color: 'red' ,opacity:  '0.66' }}>
+          תכנית אימונים לדוגמא
+        </a>
+      </div>
       <div style={{ marginTop: '20vh' , padding: '50px', color: 'white', opacity:  '0.16'}}>
         <h3>all rights reserved to @eliad shahar</h3>
       </div>
