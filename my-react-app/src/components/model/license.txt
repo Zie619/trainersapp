@@ -1,0 +1,11 @@
+Model Information:
+* title:	Dumble
+* source:	https://sketchfab.com/3d-models/dumble-9095878211274991a4d95518dd9f952a
+* author:	Sahil_3D (https://sketchfab.com/Sahil_3D)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Dumble" (https://sketchfab.com/3d-models/dumble-9095878211274991a4d95518dd9f952a) by Sahil_3D (https://sketchfab.com/Sahil_3D) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

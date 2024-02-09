@@ -1,0 +1,168 @@
+/* WorkoutTableUser.css */
+
+body {
+  margin: 0;
+  overflow: hidden; /* Hide the page scrollbar */
+}
+
+.table-container.tab{
+  background-color: rgba(0, 0, 0, 0.671);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  overflow-y: auto;
+  max-height: 80vh;
+  padding: 20px;
+  text-align: center; /* Center the text */
+}
+
+.workout-table2 {
+  width: 80%;
+  max-width: 500px;
+  border-radius: 10px;
+  padding: 20px;
+  font-family: 'Arial', sans-serif;
+  color: white;
+  animation: glow 2s infinite alternate;
+  text-align: center; /* Center the text */
+}
+
+#tth {
+  margin-bottom: 100px;
+  padding: 6px 8px;
+  background-color: #f55e6d;
+  margin-bottom: 4px;
+  color: #fff;
+  z-index: 34;
+  border: none;
+  cursor: pointer;
+  animation: shining2 100s infinite;
+  box-shadow: 0 0 5px #f55e6d, 0 0 5px #f55e6d, 0 0 10px #f55e6d, 0 0 20px #f55e6d;
+}
+
+@keyframes glow {
+  from {
+    box-shadow: 0 0 30px #7fbefd, 0 0 80px #2b95ff;
+  }
+  to {
+    box-shadow: 0 0 30px #2c3e50, 0 0 30px #2c3e50;
+  }
+}
+
+.workout-table2 table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: center; /* Center the text in the table */
+}
+
+.workout-table2 th, .workout-table2 td {
+  padding-top: 2px;
+  padding-bottom: 2px;
+  border: 1px solid rgba(223, 224, 255, 0.253);
+  margin: 5px;
+  background-color: #34495e57;
+}
+
+.workout-table2 .highlighted-row {
+  background-color: #ffcc00; /* or any other color you prefer */
+}
+
+.workout-table2 th {
+  color: #fff;
+}
+
+
+/* Hide the scrollbar */
+.table-container::-webkit-scrollbar {
+  width: 0;
+  background: transparent; /* This might help on Safari */
+}
+
+.table-container {
+  scrollbar-width: thin;
+  scrollbar-color: transparent transparent; /* Firefox scrollbar color */
+}
+
+
+canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  overflow: hidden;
+}
+
+/* Media query for smaller screens */
+@media (max-width: 800px) {
+  .workout-table2 {
+    width: 100%;
+    margin-right: auto;
+  }
+
+  .workout-table2 table {
+    font-size: 16px;
+    border-width: 2px;
+    text-align: center; /* Center the text in the table */
+  }
+
+  .workout-table2 th, .workout-table2 td {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin: 5px;
+  }
+}
+
+/* For screens larger than 800px */
+/* Updated Media Query with centered text for tables */
+@media (min-width: 801px) {
+  .workout-table2 {
+    width: 100%;
+    margin: 80px auto;
+  }
+
+  .workout-table2 table {
+    font-size: 24px;
+    border-width: 3px;
+    text-align: center; /* Center the text in the table */
+  }
+
+  .workout-table2 th, .workout-table2 td {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin: 10px;
+    padding-right: 15vh;
+    padding-left: 15vh;
+  }
+}
+
+.fade-container {
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.fade-container.visible {
+  opacity: 1;
+}
+
+.fade-container.hidden {
+  opacity: 0;
+}
+
+.table-container h1{
+  color: rgb(255, 102, 0);
+  text-shadow: 2px 2px 4px rgba(255, 0, 0, 0.5);
+  
+  background-color: rgba(0, 0, 0, 0.0);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  overflow-y: auto;
+  max-height: 80vh;
+
+  text-align: center; /* Center the text */
+  
+}

@@ -1,0 +1,212 @@
+/* Combined CSS */
+
+/* Keyframes for shining */
+@keyframes shining {
+  0% {
+    background-color: #4e1eff;
+    box-shadow: 0 0 1px #4e1eff, 0 0 7px #4e1eff, 0 0 12px #4e1eff, 0 0 19px #4e1eff;
+  }
+  50% {
+    background-color: #ff0019;
+    box-shadow: 0 0 1px #ff0019, 0 0 7px #ff0019, 0 0 12px #ff0019, 0 0 19px #ff0019;
+  }
+  100% {
+    background-color: #0059ff;
+    box-shadow: 0 0 1px #0059ff, 0 0 7px #0059ff, 0 0 12px #0059ff, 0 0 19px #0059ff;
+  }
+}
+
+@keyframes shining2 {
+  0% {
+    background-color: #ff0019;
+    box-shadow: 0 0 1px #ff0019, 0 0 7px #ff0019, 0 0 12px #ff0019, 0 0 19px #ff0019;
+  }
+  50% {
+    background-color: #4e1eff;
+    box-shadow: 0 0 1px #4e1eff, 0 0 7px #4e1eff, 0 0 12px #4e1eff, 0 0 19px #4e1eff;
+  }
+  100% {
+    background-color: #0059ff;
+    box-shadow: 0 0 1px #0059ff, 0 0 7px #0059ff, 0 0 12px #0059ff, 0 0 19px #0059ff;
+  }
+}
+
+/* Styling for select input, div, table, th, and td */
+.select-input {
+  width: 100%;
+  padding: 14px; /* Adjust the padding for height */
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px; /* Adjust the font size */
+}
+
+div {
+  margin-top: 10px;
+  text-align: center; /* Center the text */
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+th, td {
+  padding: 8px;
+  text-align: center;
+  border-bottom: 1px solid #ddd;
+  border-radius: 10px; /* Rounded corners */
+}
+
+/* Styling for th with shining effect */
+th {
+  position: relative;
+  margin-bottom: 100px;
+  padding: 6px 8px;
+  background-color: #f55e6d;
+  margin-bottom: 4px;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  animation: shining2 100s infinite;
+  box-shadow: 0 0 5px #f55e6d, 0 0 5px #f55e6d, 0 0 10px #f55e6d, 0 0 20px #f55e6d;
+}
+
+/* Styling for buttons with shining effect */
+#test, #test2 {
+  padding: 6px 8px;
+  margin-top: 10px;
+  background-color: #f55e6d;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  animation: shining 100s infinite;
+  box-shadow: 0 0 5px #f55e6d, 0 0 5px #f55e6d, 0 0 10px #f55e6d, 0 0 20px #f55e6d;
+  border-radius: 10px; /* Rounded corners */
+}
+
+/* Hover styles for buttons */
+#test:hover {
+  animation-play-state: paused;
+  background-color: #ff7f7f;
+}
+
+#test2:hover {
+  background-color: #ff5a5a;
+}
+
+/* Styling for workout planner container with rounded corners */
+.workout-planner-container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  border-radius: 15px; /* Rounded corners */
+}
+
+/* Styling for main heading with centered text */
+.main-heading {
+  color: #3498db;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.collection-section {
+  margin-bottom: 20px;
+}
+
+/* Rest of the existing CSS */
+
+.selected-collection {
+  color: #e74c3c;
+}
+
+.generated-link {
+  color: #3498db;
+  text-decoration: none;
+}
+
+/* Media query for smaller screens */
+@media (max-width: 600px) {
+  /* Adjustments for smaller devices */
+  div {
+    margin-top: 5px;
+    text-align: center; /* Center the text */
+  }
+
+  table {
+    margin-top: 5px;
+  }
+
+  th, td {
+    padding: 3px;
+  }
+
+  th {
+    padding: 4px 6px;
+    margin-bottom: 2px;
+  }
+
+  #test, #test2 {
+    padding: 4px 6px;
+    margin-bottom: 2px;
+  }
+
+  .workout-planner-container {
+    padding: 10px;
+  }
+}
+
+/* Styling for background with sticker */
+.background-with-sticker {
+  position: fixed;
+  background: url('/weight.png') no-repeat center center fixed;
+  background-size: cover; /* Adjust as needed */
+  width: 100%;
+  height: 100%;
+  border-radius: 15px; /* Rounded corners */
+}
+
+/* Styling for sticker with centered position and rounded corners */
+.sticker {
+  position: absolute;
+  top: 5px; /* Adjust the top position as needed */
+  left: 50%; /* Center horizontally */
+  transform: translateX(-50%); /* Center horizontally */
+  max-width: 850px; /* Adjust the maximum width as needed */
+  max-height: 400px; /* Adjust the maximum height as needed */
+  z-index: -999; /* Ensure it's above other elements */
+  background-size: contain; /* Adjust as needed */
+  border-radius: 15px; /* Rounded corners */
+}
+
+
+.logout-button-container {
+  position: fixed;
+  top: 10px;
+  left: 20px;
+  background: #fff;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.logout-button {
+  padding: 8px 12px;
+  font-size: 14px;
+  background: #3498db;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+}
+
+
+.test3  {
+  display: flex;
+  flex-direction: row;
+  align-items: center; /* Optional: Align buttons vertically centered */
+}
+
+.test3  button {
+  margin-right: 10px; /* Optional: Add some space between buttons */
+}
+
