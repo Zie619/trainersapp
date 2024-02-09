@@ -118,7 +118,6 @@ const WorkCombineFormAndTable = () => {
           desiredweight: "0 kg",
           bodytype: "morpius",
           fat: "0 %" ,
-          userphoto: "0 %" ,
           userphoto: "https://example.com/photo.jpg", 
 
         });
