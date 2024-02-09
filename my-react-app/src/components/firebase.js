@@ -4,15 +4,14 @@ import { getFirestore } from 'firebase/firestore';
 import { getAuth} from 'firebase/auth';
 import { getFunctions } from 'firebase/functions';
 
-
 const firebaseConfig = {
-  apiKey: "AIzaSyBQGu4dc29UlI0OmHshpptfrtls6DA-YRI",
-  authDomain: "omrisite-5783a.firebaseapp.com",
-  projectId: "omrisite-5783a",
-  storageBucket: "omrisite-5783a.appspot.com",
-  messagingSenderId: "1079739338434",
-  appId: "1:1079739338434:web:ece3aec7c343d3592fb55b",
-  measurementId: "G-ECV3VDJJ3K"
+  apiKey: import.meta.env.VITE_FIREBASE_API_KEY,
+  authDomain: import.meta.env.VITE_FIREBASE_AUTH_DOMAIN,
+  projectId: import.meta.env.VITE_FIREBASE_PROJECT_ID,
+  storageBucket: import.meta.env.VITE_FIREBASE_STORAGE_BUCKET,
+  messagingSenderId: import.meta.env.VITE_FIREBASE_MESSAGING_SENDER_ID,
+  appId: import.meta.env.VITE_FIREBASE_APP_ID,
+  measurementId: import.meta.env.VITE_FIREBASE_MEASUREMENT_ID
 };
 
 const firebaseApp = initializeApp(firebaseConfig);
