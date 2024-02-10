@@ -103,11 +103,7 @@ const AdminTrainer = () => {
           <p>Attempts left: {MAX_LOGIN_ATTEMPTS - loginAttempts}</p>
         )}
       </form>
-      <div style={{ marginTop: '60px' }}>
-        <a href={reglink} style={{ color: 'red' ,opacity:  '0.66' }}>
-          תכנית אימונים לדוגמא
-        </a>
-      </div>
+
       <div style={{ marginTop: '20vh' , padding: '50px', color: 'white', opacity:  '0.16'}}>
         <h3>all rights reserved to @eliad shahar</h3>
       </div>
